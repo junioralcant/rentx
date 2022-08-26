@@ -10,6 +10,7 @@ import {
   Header,
   TotalCars,
   HeaderContent,
+  CarList,
 } from './styles';
 
 export function Home() {
@@ -21,16 +22,6 @@ export function Home() {
       price: 120,
     },
     thumbnail: 'https://pngimg.com/uploads/audi/audi_PNG99491.png',
-  };
-  const carDataTwo = {
-    brand: 'Audi',
-    name: 'Q8',
-    rent: {
-      period: 'AO DIA',
-      price: 300,
-    },
-    thumbnail:
-      'https://production.autoforce.com/uploads/version/profile_image/6732/model_main_comprar-performance-55-tfsi-quattro-tiptronic_bd8e97334c.png',
   };
 
   return (
@@ -48,8 +39,11 @@ export function Home() {
         </HeaderContent>
       </Header>
 
-      <Car data={carData} />
-      <Car data={carDataTwo} />
+      <CarList
+        data={[1, 2, 3, 5, 6, 7]}
+        keyExtractor={(item) => String(item)}
+        renderItem={({ item }) => <Car data={carData} />}
+      />
     </Container>
   );
 }
