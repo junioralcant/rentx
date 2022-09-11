@@ -24,7 +24,9 @@ import {
   Name,
   About,
   Acessories,
+  Footer,
 } from './styles';
+import { Button } from '../Button';
 
 export function CarDetails() {
   return (
@@ -69,6 +71,10 @@ export function CarDetails() {
           quaerat quos esse.
         </About>
       </Content>
+
+      <Footer>
+        <Button title="Confirmar" color="green" />
+      </Footer>
     </Container>
   );
 }
