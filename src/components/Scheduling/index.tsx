@@ -14,8 +14,10 @@ import {
 import { useTheme } from 'styled-components';
 
 import ArrowSvg from '../../assets/arrow.svg';
+
 import { StatusBar } from 'react-native';
 import { Button } from '../Button';
+import { Calendar } from '../Calendar';
 
 export function Scheduling() {
   const theme = useTheme();
@@ -49,7 +51,9 @@ export function Scheduling() {
         </RentalPediod>
       </Header>
 
-      <Content></Content>
+      <Content>
+        <Calendar />
+      </Content>
 
       <Footer>
         <Button title="Confirmar" />
