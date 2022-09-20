@@ -15,7 +15,7 @@ import {
 import { Home } from './src/screens/Home';
 
 import theme from './src/styles/theme';
-import { SchedulingDatails } from './src/components/SchedulingDatails';
+import { SchedulingComplete } from './src/components/SchedulingComplete';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -33,7 +33,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       {/* <Home /> */}
-      <SchedulingDatails />
+      <SchedulingComplete />
     </ThemeProvider>
   );
 }
