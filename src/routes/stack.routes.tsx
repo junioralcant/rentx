@@ -2,10 +2,10 @@ import React from 'react';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Home } from '../screens/Home';
-import { CarDetails } from '../components/CarDetails';
-import { Scheduling } from '../components/Scheduling';
-import { SchedulingDatails } from '../components/SchedulingDatails';
-import { SchedulingComplete } from '../components/SchedulingComplete';
+import { CarDetails } from '../screens/CarDetails';
+import { Scheduling } from '../screens/Scheduling';
+import { SchedulingDatails } from '../screens/SchedulingDatails';
+import { SchedulingComplete } from '../screens/SchedulingComplete';
 
 const { Navigator, Screen } = createNativeStackNavigator();
 

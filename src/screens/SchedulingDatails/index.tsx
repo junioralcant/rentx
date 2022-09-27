@@ -5,9 +5,9 @@ import { Feather } from '@expo/vector-icons';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { useTheme } from 'styled-components';
 
-import { Accessory } from '../Accessory';
-import { BackButton } from '../BackButton';
-import { ImageSlider } from '../ImageSlider';
+import { Accessory } from '../../components/Accessory';
+import { BackButton } from '../../components/BackButton';
+import { ImageSlider } from '../../components/ImageSlider';
 
 import speedSvg from '../../assets/speed.svg';
 import accelerationSvg from '../../assets/acceleration.svg';
@@ -42,7 +42,7 @@ import {
   RetalPriceTotal,
 } from './styles';
 
-import { Button } from '../Button';
+import { Button } from '../../components/Button';
 
 export function SchedulingDatails() {
   const theme = useTheme();

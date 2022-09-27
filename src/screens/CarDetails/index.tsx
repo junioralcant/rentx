@@ -1,9 +1,9 @@
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import { Accessory } from '../Accessory';
-import { BackButton } from '../BackButton';
-import { ImageSlider } from '../ImageSlider';
+import { Accessory } from '../../components/Accessory';
+import { BackButton } from '../../components/BackButton';
+import { ImageSlider } from '../../components/ImageSlider';
 
 import speedSvg from '../../assets/speed.svg';
 import accelerationSvg from '../../assets/acceleration.svg';
@@ -28,7 +28,7 @@ import {
   Acessories,
   Footer,
 } from './styles';
-import { Button } from '../Button';
+import { Button } from '../../components/Button';
 
 export function CarDetails() {
   const navigation = useNavigation();
