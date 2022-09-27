@@ -1,6 +1,8 @@
 import styled from 'styled-components/native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import { FlatList } from 'react-native';
+import { CarDTO } from '../../dtos/CarDTO';
+import React from 'react';
 
 export const Container = styled.View`
   flex: 1;
@@ -38,4 +40,4 @@ export const CarList = styled(FlatList).attrs({
   font-size: ${RFValue(15)}px;
   font-family: ${({ theme }) => theme.fonts.primary_400};
   color: ${({ theme }) => theme.colors.text};
-`;
+` as React.ComponentType as new <CarDTO>() => FlatList<CarDTO>;
